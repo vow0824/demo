@@ -14,7 +14,7 @@ import java.util.Collections;
 public class MybatisPlusGeneratorUtil {
 
     public static void generate() {
-        FastAutoGenerator.create("jdbc:mysql://192.168.136.16:3306/test", "root", "root")
+        FastAutoGenerator.create("jdbc:mysql://192.168.119.16:3306/test", "root", "root")
                 .globalConfig(builder -> {
                     builder.author("vow") // 设置作者
                             //.enableSwagger() // 开启 swagger 模式
@@ -23,11 +23,11 @@ public class MybatisPlusGeneratorUtil {
                 })
                 .packageConfig(builder -> {
                     builder.parent("com.vow.demo.entity") // 设置父包名
-                            .moduleName("user") // 设置父包模块名
+                            .moduleName("order") // 设置父包模块名
                             .pathInfo(Collections.singletonMap(OutputFile.xml, "D:\\IdeaProjects\\demo\\src\\main\\resources\\mapper")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("user");
+                    builder.addInclude("order");
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
