@@ -5,10 +5,10 @@ spring:
       url: jdbc:mysql://192.168.119.16:3306/test
       username: root
       password: root
-      type: com.alibaba.druid.pool.DruidDataSource
+      #type: com.alibaba.druid.pool.DruidDataSource
     shard:
-      url-1: jdbc:mysql://192.168.119.16:3306/test_0
-      url-2: jdbc:mysql://192.168.119.16:3306/test_1
+      url-0: jdbc:mysql://192.168.119.16:3306/test_0
+      url-1: jdbc:mysql://192.168.119.16:3306/test_1
       username: root
       password: root
       initial-size: 3

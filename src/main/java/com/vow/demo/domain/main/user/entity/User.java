@@ -1,4 +1,4 @@
-package com.vow.demo.entity.user.entity;
+package com.vow.demo.domain.main.user.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

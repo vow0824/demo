@@ -37,7 +37,7 @@ public class MyBatisConfig {
     @Bean(name = "mainMapperScannerConfigurer")
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer configurer = new MapperScannerConfigurer();
-        configurer.setBasePackage("com.raycloud.dbb.qc.mapper,com.raycloud.dbb.live.mapper,com.raycloud.dbb.user.mapper,com.raycloud.dbb.order.mapper,com.raycloud.dbb.marketing.mapper");
+        configurer.setBasePackage("com.vow.demo.domain.main.*.mapper");
         configurer.setSqlSessionTemplateBeanName("mainSqlSessionTemplate");
         return configurer;
     }

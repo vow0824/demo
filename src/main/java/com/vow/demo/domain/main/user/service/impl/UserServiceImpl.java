@@ -1,15 +1,14 @@
-package com.vow.demo.entity.user.service.impl;
+package com.vow.demo.domain.main.user.service.impl;
 
-import com.vow.demo.entity.user.entity.User;
-import com.vow.demo.entity.user.mapper.UserMapper;
-import com.vow.demo.entity.user.service.IUserService;
+import com.vow.demo.domain.main.user.entity.User;
+import com.vow.demo.domain.main.user.mapper.UserMapper;
+import com.vow.demo.domain.main.user.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.vow.demo.param.UserSaveParam;
+import com.vow.demo.domain.param.UserSaveParam;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  * <p>

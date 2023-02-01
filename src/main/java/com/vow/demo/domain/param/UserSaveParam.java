@@ -1,4 +1,4 @@
-package com.vow.demo.param;
+package com.vow.demo.domain.param;
 
 import lombok.Data;
 

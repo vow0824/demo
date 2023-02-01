@@ -1,8 +1,8 @@
-package com.vow.demo.entity.user.service;
+package com.vow.demo.domain.main.user.service;
 
-import com.vow.demo.entity.user.entity.User;
+import com.vow.demo.domain.main.user.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.vow.demo.param.UserSaveParam;
+import com.vow.demo.domain.param.UserSaveParam;
 
 /**
  * <p>

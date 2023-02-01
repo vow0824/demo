@@ -44,8 +44,8 @@ public class ShardingDataSourceConfig {
     public DataSource getShardingDataSource(Environment env) throws SQLException {
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
 
-        shardingRuleConfig.getBindingTableGroups().add("order");
-        shardingRuleConfig.getTableRuleConfigs().add(getTableRuleConfiguration("order", "order_id", "test_${0..1}.dbb_ad_${0..1}"));
+        shardingRuleConfig.getBindingTableGroups().add("app_order");
+        shardingRuleConfig.getTableRuleConfigs().add(getTableRuleConfiguration("app_order", "order_id", "test_${0..1}.app_order_${0..1}"));
 
         shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("uid", (PreciseShardingAlgorithm<Long>) (availableTargetNames, shardingValue) -> {
             String shard = "_" + (shardingValue.getValue() % 50 / 10 + 1);
@@ -65,9 +65,9 @@ public class ShardingDataSourceConfig {
 
     private Map<String, DataSource> createDataSourceMap(Environment env) {
         Map<String, DataSource> result = new HashMap<>(5);
-        for (int shard = 1; shard <= 5; shard++) {
+        for (int shard = 0; shard <= 1; shard++) {
             DataSource dataSource = createDataSource(env, shard);
-            result.put("dbb_shard_" + shard, dataSource);
+            result.put("test_" + shard, dataSource);
         }
         return result;
     }
@@ -76,11 +76,7 @@ public class ShardingDataSourceConfig {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setUrl(env.getRequiredProperty("spring.datasource.shard.url-" + shard));
         druidDataSource.setUsername(env.getRequiredProperty("spring.datasource.shard.username"));
-        if(StringUtils.isNotBlank(env.getProperty("spring.datasource.shard.password"))){
-            druidDataSource.setPassword(env.getRequiredProperty("spring.datasource.shard.password"));
-        }
-
-
+        druidDataSource.setPassword(env.getRequiredProperty("spring.datasource.shard.password"));
         druidDataSource.setInitialSize(env.getRequiredProperty("spring.datasource.shard.initial-size", Integer.class));
         druidDataSource.setMinIdle(env.getRequiredProperty("spring.datasource.shard.min-idle", Integer.class));
         druidDataSource.setMaxActive(env.getRequiredProperty("spring.datasource.shard.max-active", Integer.class));
@@ -114,7 +110,7 @@ public class ShardingDataSourceConfig {
     @Bean(name = "shardMapperScannerConfigurer")
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer configurer = new MapperScannerConfigurer();
-        configurer.setBasePackage("com.raycloud.dbb.qc.shard.mapper,com.raycloud.dbb.live.shard.mapper,com.raycloud.dbb.marketing.shard.mapper");
+        configurer.setBasePackage("com.vow.demo.domain.shard.*.mapper");
         configurer.setSqlSessionTemplateBeanName("shardSqlSessionTemplate");
         return configurer;
     }
@@ -127,18 +123,18 @@ public class ShardingDataSourceConfig {
     }
 
     public static TableRuleConfiguration getTableRuleConfiguration(String tableName, String shardingColumn, String actualDataNodes) {
-        return getTableRuleConfiguration(tableName, shardingColumn, actualDataNodes, 5, 10);
+        return getTableRuleConfiguration(tableName, shardingColumn, actualDataNodes, 2, 2);
     }
 
     public static TableRuleConfiguration getTableRuleConfiguration(String tableName,String shardingColumn,String actualDataNodes,Integer databaseCount,Integer tableCount){
 
         TableRuleConfiguration  tableRuleConfiguration = new TableRuleConfiguration(tableName, actualDataNodes);
         tableRuleConfiguration.setDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration(shardingColumn, (PreciseShardingAlgorithm<Long>) (availableTargetNames, shardingValue) -> {
-            String shard = "_" + (shardingValue.getValue() % (databaseCount*10) / 10 + 1);
+            String shard = "_" + (shardingValue.getValue() % (databaseCount*10) / 10);
             return availableTargetNames.stream().filter(name -> name.endsWith(shard)).findFirst().orElseThrow(IllegalArgumentException::new);
         }));
         tableRuleConfiguration.setTableShardingStrategyConfig(new StandardShardingStrategyConfiguration(shardingColumn, (PreciseShardingAlgorithm<Long>) (availableTargetNames, shardingValue) -> {
-            String shard = "_" + (shardingValue.getValue() % tableCount + 1);
+            String shard = "_" + (shardingValue.getValue() % tableCount);
             return availableTargetNames.stream().filter(name -> name.endsWith(shard)).findFirst().orElseThrow(IllegalArgumentException::new);
         }));
 

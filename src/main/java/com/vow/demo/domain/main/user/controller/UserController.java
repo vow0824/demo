@@ -1,12 +1,11 @@
-package com.vow.demo.entity.user.controller;
+package com.vow.demo.domain.main.user.controller;
 
-import com.vow.demo.entity.user.entity.User;
-import com.vow.demo.entity.user.service.IUserService;
-import com.vow.demo.param.UserSaveParam;
+import com.vow.demo.domain.main.user.entity.User;
+import com.vow.demo.domain.main.user.service.IUserService;
+import com.vow.demo.domain.param.UserSaveParam;
 import com.vow.demo.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.stereotype.Controller;
 
 /**
  * <p>

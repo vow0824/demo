@@ -22,12 +22,12 @@ public class MybatisPlusGeneratorUtil {
                             .outputDir("D:\\IdeaProjects\\demo\\src\\main\\java"); // 指定输出目录
                 })
                 .packageConfig(builder -> {
-                    builder.parent("com.vow.demo.entity") // 设置父包名
-                            .moduleName("order") // 设置父包模块名
-                            .pathInfo(Collections.singletonMap(OutputFile.xml, "D:\\IdeaProjects\\demo\\src\\main\\resources\\mapper")); // 设置mapperXml生成路径
+                    builder.parent("com.vow.demo.domain.shard") // 设置父包名
+                            .moduleName("appOrder") // 设置父包模块名
+                            .pathInfo(Collections.singletonMap(OutputFile.xml, "D:\\IdeaProjects\\demo\\src\\main\\resources\\mybatis\\shard")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("order");
+                    builder.addInclude("app_order");
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();

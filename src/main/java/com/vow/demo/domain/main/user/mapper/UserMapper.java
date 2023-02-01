@@ -1,6 +1,6 @@
-package com.vow.demo.entity.user.mapper;
+package com.vow.demo.domain.main.user.mapper;
 
-import com.vow.demo.entity.user.entity.User;
+import com.vow.demo.domain.main.user.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

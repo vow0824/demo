@@ -1,7 +1,8 @@
-package com.vow.demo.entity.order.entity;
+package com.vow.demo.domain.shard.appOrder.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -11,9 +12,10 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author vow
- * @since 2023-01-30
+ * @since 2023-02-01
  */
-public class Order implements Serializable {
+@TableName("app_order")
+public class AppOrder implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -48,7 +50,7 @@ public class Order implements Serializable {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "AppOrder{" +
             "orderId=" + orderId +
             ", addTime=" + addTime +
             ", updTime=" + updTime +
