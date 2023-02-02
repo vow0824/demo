@@ -3,6 +3,7 @@ package com.vow.demo.Controller;
 import com.vow.demo.domain.vo.CarsItem;
 import com.vow.demo.domain.vo.Shakespeare;
 import com.vow.demo.service.EsService;
+import com.vow.demo.service.RedisService;
 import com.vow.demo.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,8 @@ public class HelloController {
 
     @Autowired
     private EsService esService;
+    @Autowired
+    private RedisService redisService;
 
     @GetMapping("/hello")
     public String hello() {
@@ -28,5 +31,17 @@ public class HelloController {
     @GetMapping("/searchShakespeare")
     public Result<List<Shakespeare>> searchShakespeare() {
         return Result.success(esService.searchShakespeare());
+    }
+
+    @GetMapping("/getValueFromRedis")
+    public Result<String> getValueFromRedis() {
+        redisService.set();
+        return Result.success(redisService.get());
+    }
+
+    @GetMapping("/printHelloWorld")
+    public Result<Void> printHelloWorld() {
+        redisService.printHelloWorld();
+        return Result.success();
     }
 }

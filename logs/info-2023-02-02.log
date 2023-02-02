@@ -1,0 +1,495 @@
+[2023-02-02 10:43:02.002] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on WIN-5UP7B8D8240 with PID 93248 (D:\IdeaProjects\demo\target\classes started by Administrator in D:\IdeaProjects\demo)
+[2023-02-02 10:43:02.002] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 42ms. Found 2 Elasticsearch repository interfaces.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 10:43:03.003] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+[2023-02-02 10:43:03.003] [org.mybatis.logging.Logger] [main] [44] [WARN ] No MyBatis mapper was found in '[com.vow.demo.entity.*.mapper]' package. Please check your configuration.
+[2023-02-02 10:43:03.003] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'myBatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 10:43:03.003] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'shardingDataSourceConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 10:43:03.003] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2023-02-02 10:43:03.003] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2023-02-02 10:43:03.003] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2023-02-02 10:43:03.003] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2023-02-02 10:43:04.004] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2023-02-02 10:43:04.004] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [285] [INFO ] Root WebApplicationContext: initialization completed in 940 ms
+[2023-02-02 10:43:04.004] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2023-02-02 10:43:04.004] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-1} inited
+[2023-02-02 10:43:04.004] [org.hibernate.jpa.internal.util.LogHelper] [task-1] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-02-02 10:43:04.004] [org.hibernate.Version] [task-1] [44] [INFO ] HHH000412: Hibernate ORM core version 5.4.21.Final
+[2023-02-02 10:43:04.004] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [task-1] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2023-02-02 10:43:04.004] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 10:43:04.004] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 10:43:04.004] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 10:43:04.004] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 10:43:04.004] [org.hibernate.dialect.Dialect] [task-1] [170] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-02-02 10:43:04.004] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [59] [INFO ] Version Spring Data Elasticsearch: 4.0.4.RELEASE
+[2023-02-02 10:43:04.004] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [60] [INFO ] Version Elasticsearch Client in build: 7.6.2
+[2023-02-02 10:43:04.004] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [61] [INFO ] Version Elasticsearch Client used: 7.6.2
+[2023-02-02 10:43:04.004] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [69] [INFO ] Version Elasticsearch cluster: 7.4.2
+[2023-02-02 10:43:04.004] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [72] [WARN ] Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.4.2
+[2023-02-02 10:43:05.005] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [task-1] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-02-02 10:43:05.005] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [task-1] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 10:43:05.005] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-2} inited
+[2023-02-02 10:43:05.005] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-3} inited
+[2023-02-02 10:43:05.005] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] ShardingRuleConfiguration:
+bindingTables:
+- app_order
+defaultDataSourceName: test_0
+defaultDatabaseStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$935/1867176619
+    shardingColumn: uid
+defaultTableStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$936/1776186092
+    shardingColumn: uid
+tables:
+  app_order:
+    actualDataNodes: test_${0..1}.app_order_${0..1}
+    databaseStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$933/554515010
+        shardingColumn: order_id
+    logicTable: app_order
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$934/896475319
+        shardingColumn: order_id
+
+[2023-02-02 10:43:05.005] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] Properties:
+max.connections.size.per.query: '20'
+check.table.metadata.enabled: 'false'
+
+[2023-02-02 10:43:05.005] [org.apache.shardingsphere.core.metadata.ShardingMetaDataLoader] [main] [131] [INFO ] Loading 1 logic tables' meta data.
+[2023-02-02 10:43:05.005] [org.apache.shardingsphere.sql.parser.binder.metadata.schema.SchemaMetaDataLoader] [main] [70] [INFO ] Loading 2 tables' meta data.
+[2023-02-02 10:43:06.006] [org.apache.shardingsphere.shardingjdbc.jdbc.core.context.MultipleDataSourcesRuntimeContext] [main] [59] [INFO ] Meta data load finished, cost 32 milliseconds.
+[2023-02-02 10:43:06.006] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-02-02 10:43:06.006] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2023-02-02 10:43:06.006] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2023-02-02 10:43:06.006] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [49] [INFO ] Triggering deferred initialization of Spring Data repositories…
+[2023-02-02 10:43:06.006] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [53] [INFO ] Spring Data repositories initialized!
+[2023-02-02 10:43:06.006] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 3.651 seconds (JVM running for 4.254)
+[2023-02-02 10:44:06.006] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-2] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-02-02 10:44:06.006] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2023-02-02 10:44:06.006] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [547] [INFO ] Completed initialization in 8 ms
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":13,"lineNumber":"1.1.11","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"All of one nature, of one substance bred,"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":14,"lineNumber":"1.1.12","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"Did lately meet in the intestine shock"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":15,"lineNumber":"1.1.13","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"And furious close of civil butchery"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":16,"lineNumber":"1.1.14","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"Shall now, in mutual well-beseeming ranks,"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":17,"lineNumber":"1.1.15","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"March all one way and be no more opposed"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":18,"lineNumber":"1.1.16","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"Against acquaintance, kindred and allies:"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":19,"lineNumber":"1.1.17","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"The edge of war, like an ill-sheathed knife,"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":20,"lineNumber":"1.1.18","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"No more shall cut his master. Therefore, friends,"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":21,"lineNumber":"1.1.19","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"As far as to the sepulchre of Christ,"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [31] [INFO ] shakespeare:{"lineId":22,"lineNumber":"1.1.20","playName":"Henry IV","speaker":"KING HENRY IV","speechNumber":1,"textEntry":"Whose soldier now, under whose blessed cross"}
+[2023-02-02 10:44:07.007] [com.vow.demo.service.EsService] [http-nio-8080-exec-2] [34] [INFO ] list:10
+[2023-02-02 13:08:15.015] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-2} closing ...
+[2023-02-02 13:08:15.015] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-2} closed
+[2023-02-02 13:08:15.015] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-3} closing ...
+[2023-02-02 13:08:15.015] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-3} closed
+[2023-02-02 13:08:15.015] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringContextShutdownHook] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 13:08:15.015] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-02-02 13:08:15.015] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-1} closing ...
+[2023-02-02 13:08:15.015] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-1} closed
+[2023-02-02 16:59:33.033] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on WIN-5UP7B8D8240 with PID 43060 (D:\IdeaProjects\demo\target\classes started by Administrator in D:\IdeaProjects\demo)
+[2023-02-02 16:59:33.033] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 64ms. Found 2 Elasticsearch repository interfaces.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 16:59:34.034] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+[2023-02-02 16:59:34.034] [org.mybatis.logging.Logger] [main] [44] [WARN ] No MyBatis mapper was found in '[com.vow.demo.entity.*.mapper]' package. Please check your configuration.
+[2023-02-02 16:59:34.034] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'myBatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 16:59:34.034] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'shardingDataSourceConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 16:59:34.034] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2023-02-02 16:59:34.034] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2023-02-02 16:59:34.034] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2023-02-02 16:59:34.034] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2023-02-02 16:59:34.034] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2023-02-02 16:59:34.034] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [285] [INFO ] Root WebApplicationContext: initialization completed in 1143 ms
+[2023-02-02 16:59:35.035] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2023-02-02 16:59:35.035] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-1} inited
+[2023-02-02 16:59:36.036] [org.hibernate.jpa.internal.util.LogHelper] [task-1] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-02-02 16:59:36.036] [org.hibernate.Version] [task-1] [44] [INFO ] HHH000412: Hibernate ORM core version 5.4.21.Final
+[2023-02-02 16:59:36.036] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [task-1] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2023-02-02 16:59:36.036] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 16:59:36.036] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 16:59:36.036] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 16:59:36.036] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 16:59:36.036] [org.hibernate.dialect.Dialect] [task-1] [170] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-02-02 16:59:36.036] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [59] [INFO ] Version Spring Data Elasticsearch: 4.0.4.RELEASE
+[2023-02-02 16:59:36.036] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [60] [INFO ] Version Elasticsearch Client in build: 7.6.2
+[2023-02-02 16:59:36.036] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [61] [INFO ] Version Elasticsearch Client used: 7.6.2
+[2023-02-02 16:59:36.036] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [69] [INFO ] Version Elasticsearch cluster: 7.4.2
+[2023-02-02 16:59:36.036] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [72] [WARN ] Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.4.2
+[2023-02-02 16:59:36.036] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [task-1] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-02-02 16:59:36.036] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [task-1] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 16:59:37.037] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-2} inited
+[2023-02-02 16:59:37.037] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-3} inited
+[2023-02-02 16:59:38.038] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] ShardingRuleConfiguration:
+bindingTables:
+- app_order
+defaultDataSourceName: test_0
+defaultDatabaseStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1023/1285487049
+    shardingColumn: uid
+defaultTableStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1024/7313260
+    shardingColumn: uid
+tables:
+  app_order:
+    actualDataNodes: test_${0..1}.app_order_${0..1}
+    databaseStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1021/1658724563
+        shardingColumn: order_id
+    logicTable: app_order
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1022/1628035200
+        shardingColumn: order_id
+
+[2023-02-02 16:59:38.038] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] Properties:
+max.connections.size.per.query: '20'
+check.table.metadata.enabled: 'false'
+
+[2023-02-02 16:59:38.038] [org.apache.shardingsphere.core.metadata.ShardingMetaDataLoader] [main] [131] [INFO ] Loading 1 logic tables' meta data.
+[2023-02-02 16:59:38.038] [org.apache.shardingsphere.sql.parser.binder.metadata.schema.SchemaMetaDataLoader] [main] [70] [INFO ] Loading 2 tables' meta data.
+[2023-02-02 16:59:38.038] [org.apache.shardingsphere.shardingjdbc.jdbc.core.context.MultipleDataSourcesRuntimeContext] [main] [59] [INFO ] Meta data load finished, cost 283 milliseconds.
+[2023-02-02 16:59:38.038] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-02-02 16:59:38.038] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2023-02-02 16:59:38.038] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2023-02-02 16:59:38.038] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [49] [INFO ] Triggering deferred initialization of Spring Data repositories…
+[2023-02-02 16:59:38.038] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [53] [INFO ] Spring Data repositories initialized!
+[2023-02-02 16:59:38.038] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.565 seconds (JVM running for 6.198)
+[2023-02-02 16:59:53.053] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-2] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-02-02 16:59:53.053] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2023-02-02 16:59:53.053] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [547] [INFO ] Completed initialization in 5 ms
+[2023-02-02 17:08:18.018] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-2} closing ...
+[2023-02-02 17:08:18.018] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-2} closed
+[2023-02-02 17:08:18.018] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-3} closing ...
+[2023-02-02 17:08:18.018] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-3} closed
+[2023-02-02 17:08:18.018] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringContextShutdownHook] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:08:18.018] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:08:18.018] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-1} closing ...
+[2023-02-02 17:08:18.018] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-1} closed
+[2023-02-02 17:08:26.026] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on WIN-5UP7B8D8240 with PID 127764 (D:\IdeaProjects\demo\target\classes started by Administrator in D:\IdeaProjects\demo)
+[2023-02-02 17:08:26.026] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 50ms. Found 2 Elasticsearch repository interfaces.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 17:08:27.027] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+[2023-02-02 17:08:27.027] [org.mybatis.logging.Logger] [main] [44] [WARN ] No MyBatis mapper was found in '[com.vow.demo.entity.*.mapper]' package. Please check your configuration.
+[2023-02-02 17:08:27.027] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'myBatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 17:08:27.027] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'shardingDataSourceConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 17:08:27.027] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2023-02-02 17:08:27.027] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2023-02-02 17:08:27.027] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2023-02-02 17:08:27.027] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2023-02-02 17:08:28.028] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2023-02-02 17:08:28.028] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [285] [INFO ] Root WebApplicationContext: initialization completed in 1247 ms
+[2023-02-02 17:08:28.028] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:08:28.028] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-1} inited
+[2023-02-02 17:08:28.028] [org.hibernate.jpa.internal.util.LogHelper] [task-1] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-02-02 17:08:28.028] [org.hibernate.Version] [task-1] [44] [INFO ] HHH000412: Hibernate ORM core version 5.4.21.Final
+[2023-02-02 17:08:29.029] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [task-1] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2023-02-02 17:08:29.029] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:08:29.029] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:08:29.029] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:08:29.029] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:08:29.029] [org.hibernate.dialect.Dialect] [task-1] [170] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-02-02 17:08:29.029] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [59] [INFO ] Version Spring Data Elasticsearch: 4.0.4.RELEASE
+[2023-02-02 17:08:29.029] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [60] [INFO ] Version Elasticsearch Client in build: 7.6.2
+[2023-02-02 17:08:29.029] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [61] [INFO ] Version Elasticsearch Client used: 7.6.2
+[2023-02-02 17:08:29.029] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [69] [INFO ] Version Elasticsearch cluster: 7.4.2
+[2023-02-02 17:08:29.029] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [72] [WARN ] Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.4.2
+[2023-02-02 17:08:29.029] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [task-1] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-02-02 17:08:29.029] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [task-1] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:08:29.029] [org.redisson.Version] [main] [41] [INFO ] Redisson 3.19.2
+[2023-02-02 17:08:29.029] [org.redisson.connection.pool.ConnectionPool] [redisson-netty-2-6] [162] [INFO ] 1 connections initialized for 192.168.119.16/192.168.119.16:6379
+[2023-02-02 17:08:30.030] [org.redisson.connection.pool.ConnectionPool] [redisson-netty-2-19] [162] [INFO ] 24 connections initialized for 192.168.119.16/192.168.119.16:6379
+[2023-02-02 17:08:30.030] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-2} inited
+[2023-02-02 17:08:30.030] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-3} inited
+[2023-02-02 17:08:30.030] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] ShardingRuleConfiguration:
+bindingTables:
+- app_order
+defaultDataSourceName: test_0
+defaultDatabaseStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1084/452368204
+    shardingColumn: uid
+defaultTableStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1085/1641421582
+    shardingColumn: uid
+tables:
+  app_order:
+    actualDataNodes: test_${0..1}.app_order_${0..1}
+    databaseStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1082/632879570
+        shardingColumn: order_id
+    logicTable: app_order
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1083/695846639
+        shardingColumn: order_id
+
+[2023-02-02 17:08:30.030] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] Properties:
+max.connections.size.per.query: '20'
+check.table.metadata.enabled: 'false'
+
+[2023-02-02 17:08:30.030] [org.apache.shardingsphere.core.metadata.ShardingMetaDataLoader] [main] [131] [INFO ] Loading 1 logic tables' meta data.
+[2023-02-02 17:08:30.030] [org.apache.shardingsphere.sql.parser.binder.metadata.schema.SchemaMetaDataLoader] [main] [70] [INFO ] Loading 2 tables' meta data.
+[2023-02-02 17:08:30.030] [org.apache.shardingsphere.shardingjdbc.jdbc.core.context.MultipleDataSourcesRuntimeContext] [main] [59] [INFO ] Meta data load finished, cost 108 milliseconds.
+[2023-02-02 17:08:31.031] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-02-02 17:08:31.031] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [main] [58] [INFO ] Exposing 2 endpoint(s) beneath base path '/actuator'
+[2023-02-02 17:08:31.031] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2023-02-02 17:08:31.031] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2023-02-02 17:08:31.031] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [49] [INFO ] Triggering deferred initialization of Spring Data repositories…
+[2023-02-02 17:08:31.031] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [53] [INFO ] Spring Data repositories initialized!
+[2023-02-02 17:08:31.031] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.248 seconds (JVM running for 5.872)
+[2023-02-02 17:08:37.037] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-2] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-02-02 17:08:37.037] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2023-02-02 17:08:37.037] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [547] [INFO ] Completed initialization in 5 ms
+[2023-02-02 17:14:40.040] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-2} closing ...
+[2023-02-02 17:14:40.040] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-2} closed
+[2023-02-02 17:14:40.040] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-3} closing ...
+[2023-02-02 17:14:40.040] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-3} closed
+[2023-02-02 17:14:40.040] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringContextShutdownHook] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:14:40.040] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:14:40.040] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-1} closing ...
+[2023-02-02 17:14:40.040] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-1} closed
+[2023-02-02 17:14:45.045] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on WIN-5UP7B8D8240 with PID 53996 (D:\IdeaProjects\demo\target\classes started by Administrator in D:\IdeaProjects\demo)
+[2023-02-02 17:14:45.045] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 50ms. Found 2 Elasticsearch repository interfaces.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 17:14:46.046] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+[2023-02-02 17:14:46.046] [org.mybatis.logging.Logger] [main] [44] [WARN ] No MyBatis mapper was found in '[com.vow.demo.entity.*.mapper]' package. Please check your configuration.
+[2023-02-02 17:14:46.046] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'myBatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 17:14:46.046] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'shardingDataSourceConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 17:14:47.047] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2023-02-02 17:14:47.047] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2023-02-02 17:14:47.047] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2023-02-02 17:14:47.047] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2023-02-02 17:14:47.047] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2023-02-02 17:14:47.047] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [285] [INFO ] Root WebApplicationContext: initialization completed in 1217 ms
+[2023-02-02 17:14:47.047] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:14:47.047] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-1} inited
+[2023-02-02 17:14:48.048] [org.hibernate.jpa.internal.util.LogHelper] [task-1] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-02-02 17:14:48.048] [org.hibernate.Version] [task-1] [44] [INFO ] HHH000412: Hibernate ORM core version 5.4.21.Final
+[2023-02-02 17:14:48.048] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [task-1] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2023-02-02 17:14:48.048] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:14:48.048] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:14:48.048] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:14:48.048] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:14:48.048] [org.hibernate.dialect.Dialect] [task-1] [170] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-02-02 17:14:48.048] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [59] [INFO ] Version Spring Data Elasticsearch: 4.0.4.RELEASE
+[2023-02-02 17:14:48.048] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [60] [INFO ] Version Elasticsearch Client in build: 7.6.2
+[2023-02-02 17:14:48.048] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [61] [INFO ] Version Elasticsearch Client used: 7.6.2
+[2023-02-02 17:14:48.048] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [69] [INFO ] Version Elasticsearch cluster: 7.4.2
+[2023-02-02 17:14:48.048] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [72] [WARN ] Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.4.2
+[2023-02-02 17:14:48.048] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [task-1] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-02-02 17:14:48.048] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [task-1] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:14:48.048] [org.redisson.Version] [main] [41] [INFO ] Redisson 3.19.2
+[2023-02-02 17:14:49.049] [org.redisson.connection.pool.ConnectionPool] [redisson-netty-2-5] [162] [INFO ] 1 connections initialized for 192.168.119.16/192.168.119.16:6379
+[2023-02-02 17:14:49.049] [org.redisson.connection.pool.ConnectionPool] [redisson-netty-2-19] [162] [INFO ] 24 connections initialized for 192.168.119.16/192.168.119.16:6379
+[2023-02-02 17:14:49.049] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-2} inited
+[2023-02-02 17:14:49.049] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-3} inited
+[2023-02-02 17:14:50.050] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] ShardingRuleConfiguration:
+bindingTables:
+- app_order
+defaultDataSourceName: test_0
+defaultDatabaseStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1084/1811787479
+    shardingColumn: uid
+defaultTableStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1085/657218237
+    shardingColumn: uid
+tables:
+  app_order:
+    actualDataNodes: test_${0..1}.app_order_${0..1}
+    databaseStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1082/327849263
+        shardingColumn: order_id
+    logicTable: app_order
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1083/1987887398
+        shardingColumn: order_id
+
+[2023-02-02 17:14:50.050] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] Properties:
+max.connections.size.per.query: '20'
+check.table.metadata.enabled: 'false'
+
+[2023-02-02 17:14:50.050] [org.apache.shardingsphere.core.metadata.ShardingMetaDataLoader] [main] [131] [INFO ] Loading 1 logic tables' meta data.
+[2023-02-02 17:14:50.050] [org.apache.shardingsphere.sql.parser.binder.metadata.schema.SchemaMetaDataLoader] [main] [70] [INFO ] Loading 2 tables' meta data.
+[2023-02-02 17:14:50.050] [org.apache.shardingsphere.shardingjdbc.jdbc.core.context.MultipleDataSourcesRuntimeContext] [main] [59] [INFO ] Meta data load finished, cost 96 milliseconds.
+[2023-02-02 17:14:50.050] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-02-02 17:14:50.050] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [main] [58] [INFO ] Exposing 2 endpoint(s) beneath base path '/actuator'
+[2023-02-02 17:14:50.050] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2023-02-02 17:14:50.050] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2023-02-02 17:14:50.050] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [49] [INFO ] Triggering deferred initialization of Spring Data repositories…
+[2023-02-02 17:14:50.050] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [53] [INFO ] Spring Data repositories initialized!
+[2023-02-02 17:14:50.050] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.151 seconds (JVM running for 5.768)
+[2023-02-02 17:15:08.008] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-3] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-02-02 17:15:08.008] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2023-02-02 17:15:08.008] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [547] [INFO ] Completed initialization in 6 ms
+[2023-02-02 17:15:08.008] [com.vow.demo.service.RedisService] [http-nio-8080-exec-3] [36] [INFO ] hello world!
+[2023-02-02 17:16:31.031] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-2} closing ...
+[2023-02-02 17:16:31.031] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-2} closed
+[2023-02-02 17:16:31.031] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-3} closing ...
+[2023-02-02 17:16:31.031] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-3} closed
+[2023-02-02 17:16:31.031] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringContextShutdownHook] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:16:31.031] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:16:31.031] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-1} closing ...
+[2023-02-02 17:16:31.031] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-1} closed
+[2023-02-02 17:16:37.037] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on WIN-5UP7B8D8240 with PID 7548 (D:\IdeaProjects\demo\target\classes started by Administrator in D:\IdeaProjects\demo)
+[2023-02-02 17:16:37.037] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 48ms. Found 2 Elasticsearch repository interfaces.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [249] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.CarsDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [main] [348] [INFO ] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.vow.demo.dao.ShakespeareDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2023-02-02 17:16:37.037] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+[2023-02-02 17:16:38.038] [org.mybatis.logging.Logger] [main] [44] [WARN ] No MyBatis mapper was found in '[com.vow.demo.entity.*.mapper]' package. Please check your configuration.
+[2023-02-02 17:16:38.038] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'myBatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 17:16:38.038] [org.springframework.context.annotation.ConfigurationClassPostProcessor] [main] [403] [INFO ] Cannot enhance @Configuration bean definition 'shardingDataSourceConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[2023-02-02 17:16:38.038] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2023-02-02 17:16:38.038] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2023-02-02 17:16:38.038] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2023-02-02 17:16:38.038] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.38]
+[2023-02-02 17:16:38.038] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2023-02-02 17:16:38.038] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [285] [INFO ] Root WebApplicationContext: initialization completed in 1225 ms
+[2023-02-02 17:16:38.038] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:16:39.039] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-1} inited
+[2023-02-02 17:16:39.039] [org.hibernate.jpa.internal.util.LogHelper] [task-1] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-02-02 17:16:39.039] [org.hibernate.Version] [task-1] [44] [INFO ] HHH000412: Hibernate ORM core version 5.4.21.Final
+[2023-02-02 17:16:39.039] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [task-1] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2023-02-02 17:16:39.039] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:16:39.039] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:16:39.039] [org.springframework.data.convert.CustomConversions] [main] [273] [WARN ] Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:16:39.039] [org.springframework.data.convert.CustomConversions] [main] [263] [WARN ] Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+[2023-02-02 17:16:39.039] [org.hibernate.dialect.Dialect] [task-1] [170] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-02-02 17:16:39.039] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [59] [INFO ] Version Spring Data Elasticsearch: 4.0.4.RELEASE
+[2023-02-02 17:16:39.039] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [60] [INFO ] Version Elasticsearch Client in build: 7.6.2
+[2023-02-02 17:16:39.039] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [61] [INFO ] Version Elasticsearch Client used: 7.6.2
+[2023-02-02 17:16:39.039] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [69] [INFO ] Version Elasticsearch cluster: 7.4.2
+[2023-02-02 17:16:39.039] [org.springframework.data.elasticsearch.support.VersionInfo] [main] [72] [WARN ] Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.4.2
+[2023-02-02 17:16:39.039] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [task-1] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-02-02 17:16:39.039] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [task-1] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:16:39.039] [org.redisson.Version] [main] [41] [INFO ] Redisson 3.19.2
+[2023-02-02 17:16:40.040] [org.redisson.connection.pool.ConnectionPool] [redisson-netty-2-6] [162] [INFO ] 1 connections initialized for 192.168.119.16/192.168.119.16:6379
+[2023-02-02 17:16:40.040] [org.redisson.connection.pool.ConnectionPool] [redisson-netty-2-19] [162] [INFO ] 24 connections initialized for 192.168.119.16/192.168.119.16:6379
+[2023-02-02 17:16:40.040] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-2} inited
+[2023-02-02 17:16:41.041] [com.alibaba.druid.pool.DruidDataSource] [main] [1010] [INFO ] {dataSource-3} inited
+[2023-02-02 17:16:41.041] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] ShardingRuleConfiguration:
+bindingTables:
+- app_order
+defaultDataSourceName: test_0
+defaultDatabaseStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1084/2062492091
+    shardingColumn: uid
+defaultTableStrategy:
+  standard:
+    preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1085/1356101467
+    shardingColumn: uid
+tables:
+  app_order:
+    actualDataNodes: test_${0..1}.app_order_${0..1}
+    databaseStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1082/1476159321
+        shardingColumn: order_id
+    logicTable: app_order
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.vow.demo.config.ShardingDataSourceConfig$$Lambda$1083/54162225
+        shardingColumn: order_id
+
+[2023-02-02 17:16:41.041] [org.apache.shardingsphere.core.log.ConfigurationLogger] [main] [104] [INFO ] Properties:
+max.connections.size.per.query: '20'
+check.table.metadata.enabled: 'false'
+
+[2023-02-02 17:16:41.041] [org.apache.shardingsphere.core.metadata.ShardingMetaDataLoader] [main] [131] [INFO ] Loading 1 logic tables' meta data.
+[2023-02-02 17:16:41.041] [org.apache.shardingsphere.sql.parser.binder.metadata.schema.SchemaMetaDataLoader] [main] [70] [INFO ] Loading 2 tables' meta data.
+[2023-02-02 17:16:41.041] [org.apache.shardingsphere.shardingjdbc.jdbc.core.context.MultipleDataSourcesRuntimeContext] [main] [59] [INFO ] Meta data load finished, cost 126 milliseconds.
+[2023-02-02 17:16:41.041] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-02-02 17:16:41.041] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [main] [58] [INFO ] Exposing 2 endpoint(s) beneath base path '/actuator'
+[2023-02-02 17:16:41.041] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2023-02-02 17:16:41.041] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2023-02-02 17:16:41.041] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [49] [INFO ] Triggering deferred initialization of Spring Data repositories…
+[2023-02-02 17:16:41.041] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [53] [INFO ] Spring Data repositories initialized!
+[2023-02-02 17:16:41.041] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.132 seconds (JVM running for 5.751)
+[2023-02-02 17:16:45.045] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-2] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-02-02 17:16:45.045] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2023-02-02 17:16:45.045] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [547] [INFO ] Completed initialization in 6 ms
+[2023-02-02 17:16:46.046] [com.vow.demo.service.RedisService] [http-nio-8080-exec-2] [39] [INFO ] hello world!
+[2023-02-02 17:19:04.004] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-2} closing ...
+[2023-02-02 17:19:04.004] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-2} closed
+[2023-02-02 17:19:04.004] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-3} closing ...
+[2023-02-02 17:19:04.004] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-3} closed
+[2023-02-02 17:19:04.004] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringContextShutdownHook] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-02 17:19:04.004] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-02-02 17:19:04.004] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2003] [INFO ] {dataSource-1} closing ...
+[2023-02-02 17:19:04.004] [com.alibaba.druid.pool.DruidDataSource] [SpringContextShutdownHook] [2075] [INFO ] {dataSource-1} closed
