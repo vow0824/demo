@@ -1,0 +1,15 @@
+[2023-02-13 11:16:20.020] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 1
+[2023-02-13 11:16:34.034] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 2
+[2023-02-13 13:02:34.034] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 3
+[2023-02-13 13:20:03.003] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 4
+[2023-02-13 13:20:33.033] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 5
+[2023-02-13 13:25:25.025] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 1
+[2023-02-13 13:29:02.002] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 2
+[2023-02-13 13:35:14.014] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 3
+[2023-02-13 13:40:19.019] [com.vow.demo.service.CanalService] [main] [51] [INFO ] msgId -> 4
+[2023-02-13 13:46:50.050] [com.vow.demo.service.CanalService] [main] [52] [INFO ] msgId -> 5
+[2023-02-13 13:49:04.004] [com.vow.demo.service.CanalService] [main] [52] [INFO ] msgId -> 6
+[2023-02-13 13:51:13.013] [com.vow.demo.service.CanalService] [main] [52] [INFO ] msgId -> 7
+[2023-02-13 13:54:41.041] [com.vow.demo.service.CanalService] [main] [52] [INFO ] msgId -> 8
+[2023-02-13 13:59:41.041] [com.vow.demo.service.CanalService] [main] [52] [INFO ] msgId -> 9
+[2023-02-13 14:00:06.006] [com.vow.demo.service.CanalService] [main] [52] [INFO ] msgId -> 10
