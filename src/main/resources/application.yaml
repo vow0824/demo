@@ -2,13 +2,13 @@ spring:
   datasource:
     main:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.119.16:3306/test
+      url: jdbc:mysql://192.168.28.16:3306/test
       username: root
       password: root
       #type: com.alibaba.druid.pool.DruidDataSource
     shard:
-      url-0: jdbc:mysql://192.168.119.16:3306/test_0
-      url-1: jdbc:mysql://192.168.119.16:3306/test_1
+      url-0: jdbc:mysql://192.168.28.16:3306/test_0
+      url-1: jdbc:mysql://192.168.28.16:3306/test_1
       username: root
       password: root
       initial-size: 3
@@ -33,7 +33,15 @@ spring:
 #      useGlobalDataSourceStat: true
   elasticsearch:
     rest:
-      uris: 192.168.119.16:9200
+      uris: 192.168.28.16:9200
   redis:
-    host: 192.168.119.16
+    host: 192.168.28.16
     port: 6379
+
+rocketmq:
+  name-server: 192.168.28.16:9876 # 访问地址
+  producer:
+    group: Pro_Group # 必须指定group
+    send-message-timeout: 3000 # 消息发送超时时长，默认3s
+    retry-times-when-send-failed: 3 # 同步发送消息失败重试次数，默认2
+    retry-times-when-send-async-failed: 3 # 异步发送消息失败重试次数，默认2
