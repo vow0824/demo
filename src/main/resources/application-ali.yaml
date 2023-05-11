@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    main:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://120.26.160.148:3306/test
+      username: root
+      password: star123456
+    shard:
+      url-0: jdbc:mysql://120.26.160.148:3306/test_0
+      url-1: jdbc:mysql://120.26.160.148:3306/test_1
+      username: root
+      password: star123456
+      initial-size: 3
+      min-idle: 3
+      max-active: 100
+  redis:
+    host: 120.26.160.148
+    port: 6379
+
+
+
